@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 
@@ -65,4 +66,57 @@ header #scroll-pointer {
 @keyframes changeHeight {
   from {margin-top: 2rem;}
   to {margin-top: 3rem;}
+}
+
+/* ----------------main----------------------- */
+
+
+/* profile */
+
+main #profile {
+  height: 100vh;
+}
+
+
+main #profile .profile-box {
+  text-align: center;
+  transform: translateY(40%);
+  width: 50%;
+  margin: auto;
+}
+
+main #profile h2 {
+  padding: 1rem;
+}
+
+main #profile p {
+  margin-top: 2rem;
+  color: gray;
+  font-size: 1rem;
+  font-weight: lighter;
+  
+}
+
+
+
+main #profile ul {
+  margin-top: 2rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+main #profile li {
+  display: inline;
+  width: 33.3333%;
+  margin: 3rem;
+  color: #f57f17;
+}
+
+
+
+
+/* Introduction */
+
+main #introduction {
+  height: 100vh;
 }
