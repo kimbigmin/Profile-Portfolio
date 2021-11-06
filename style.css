@@ -116,6 +116,7 @@ main #profile li {
   display: inline;
   margin: 3rem;
   color: #f57f17;
+  text-decoration: none;
 }
 
 
