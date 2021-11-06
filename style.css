@@ -5,11 +5,13 @@
   padding: 0;
   text-decoration: none;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  list-style: none;
 }
 
 
 header {
   height: 100vh;
+
 }
 
 header #navbar {
@@ -75,12 +77,15 @@ header #scroll-pointer {
 
 main #profile {
   height: 100vh;
+  background-color: rgba(199, 199, 199, 0.342);
 }
 
 
 main #profile .profile-box {
+  position: relative;
+  top: 15%;
   text-align: center;
-  transform: translateY(40%);
+  height: 100%;
   width: 50%;
   margin: auto;
 }
@@ -100,14 +105,15 @@ main #profile p {
 
 
 main #profile ul {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  
   font-size: 2rem;
   width: 100%;
 }
 
 main #profile li {
   display: inline;
-  width: 33.3333%;
   margin: 3rem;
   color: #f57f17;
 }
@@ -117,6 +123,116 @@ main #profile li {
 
 /* Introduction */
 
-main #introduction {
+main #introductions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 0;
+  width: 100%;
+  background-image: url(./image/coding.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
+main #introductions article{
+
+  border-radius: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 60%;
+  margin: 5rem 0 5rem 0;
+
+}
+
+
+
+article h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: rgb(85, 85, 85);
+}
+
+article .contents-box ul {
+  display: flex;
+  margin: 1rem 0 3rem 0;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+article .contents-box li {
+  text-align: center;
+}
+
+
+article .contents-box i {
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  display: block;
+  text-align: center;
+}
+
+article .contents-box {
+  padding: 1rem 1rem 0 1rem;
+}
+
+article .contents-box p {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+
+/* portfolio */
+
+main #portfolio {
+  background-color: rgba(163, 163, 163, 0.3);
   height: 100vh;
 }
+
+main #portfolio .portfolio-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} 
+
+main #portfolio .portfolio-box p {
+  position: absolute;
+  margin-top: 5rem;
+  color: black;
+  animation-name: changeSize;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes changeSize {
+  from {font-size: 1rem;}
+  to {font-size: 2rem;
+  color:salmon;}
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(163, 163, 163, 0.5);
+  border-top: solid 0.5px rgba(163, 163, 163, 0.3);
+  height: 5rem;
+  width: 100%;
+
+  font-size: 0.7rem;
+}
+
